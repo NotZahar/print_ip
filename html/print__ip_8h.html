@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>print_ip: Файл libs/PrintIP/include/print_ip.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">print_ip
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Функция печати условного IP-адреса</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_6533c20559de7bc89a19cc103309b296.html">PrintIP</a></li><li class="navelem"><a class="el" href="dir_d355097761e4b21b722e35ade4730040.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл print_ip.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="helper_8h_source.html">helper.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для print_ip.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="print__ip_8h__incl.png" border="0" usemap="#alibs_2PrintIP_2include_2print__ip_8h" alt=""/></div>
+<map name="alibs_2PrintIP_2include_2print__ip_8h" id="alibs_2PrintIP_2include_2print__ip_8h">
+<area shape="rect" title=" " alt="" coords="61,5,203,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,61,121"/>
+<area shape="rect" title=" " alt="" coords="57,169,127,196"/>
+<area shape="rect" title=" " alt="" coords="137,95,197,121"/>
+<area shape="rect" href="helper_8h.html" title=" " alt="" coords="268,95,343,121"/>
+<area shape="rect" title=" " alt="" coords="152,169,211,196"/>
+<area shape="rect" title=" " alt="" coords="235,169,298,196"/>
+<area shape="rect" title=" " alt="" coords="323,169,365,196"/>
+<area shape="rect" title=" " alt="" coords="389,169,475,196"/>
+<area shape="rect" title=" " alt="" coords="499,169,579,196"/>
+<area shape="rect" title=" " alt="" coords="603,169,695,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="print__ip_8h__dep__incl.png" border="0" usemap="#alibs_2PrintIP_2include_2print__ip_8hdep" alt=""/></div>
+<map name="alibs_2PrintIP_2include_2print__ip_8hdep" id="alibs_2PrintIP_2include_2print__ip_8hdep">
+<area shape="rect" title=" " alt="" coords="71,5,213,47"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="5,95,111,121"/>
+<area shape="rect" href="print__ip__output_8cpp.html" title=" " alt="" coords="135,95,317,121"/>
+</map>
+</div>
+</div>
+<p><a href="print__ip_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespaceprint"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprint.html">print</a></td></tr>
+<tr class="memdesc:namespaceprint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основной namespace для PrintIP <br  />
+ <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceprint_1_1impl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceprint_1_1impl.html">print::impl</a></td></tr>
+<tr class="memdesc:namespaceprint_1_1impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация функции печати для разных типов <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a6b010a9bf1eecb3f79899626a5201da5"><td class="memTemplParams" colspan="2">template&lt;class T , std::enable_if_t&lt; std::is_integral_v&lt; T &gt;, bool &gt;  = true&gt; </td></tr>
+<tr class="memitem:a6b010a9bf1eecb3f79899626a5201da5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceprint_1_1impl.html#a6b010a9bf1eecb3f79899626a5201da5">print::impl::print_ip</a> (T &amp;&amp;ip)</td></tr>
+<tr class="memdesc:a6b010a9bf1eecb3f79899626a5201da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция печати для целочисленных типов, число печатается по байтно  <a href="namespaceprint_1_1impl.html#a6b010a9bf1eecb3f79899626a5201da5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6b010a9bf1eecb3f79899626a5201da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c37784ed478b89582b68887a4f78e7d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7c37784ed478b89582b68887a4f78e7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceprint.html#a7c37784ed478b89582b68887a4f78e7d">print::print_ip</a> (T &amp;&amp;ip)</td></tr>
+<tr class="memdesc:a7c37784ed478b89582b68887a4f78e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция печати для различных типов, выбор функции для определенных типов осуществляется путем использования механизма SFINAE.  <a href="namespaceprint.html#a7c37784ed478b89582b68887a4f78e7d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7c37784ed478b89582b68887a4f78e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
