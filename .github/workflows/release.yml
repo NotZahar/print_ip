@@ -17,6 +17,7 @@ jobs:
       - run: cmake --build . --target install
       - run: cmake --build . --target test
       - run: cmake --build . --target package
+      
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -27,6 +28,7 @@ jobs:
           release_name: v${{ github.run_number }}
           draft: false
           prerelease: false
+      
       - name: Upload Release Asset
         id: upload_release_asset
         uses: actions/upload-release-asset@v1

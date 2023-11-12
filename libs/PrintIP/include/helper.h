@@ -10,6 +10,10 @@
 #include <type_traits>
 
 namespace print {
+    /// @brief Вывод в стандартный поток элементов контейнера, итератор которого 
+    /// удовлетворяет LegacyRandomAccessIterator
+    /// @tparam T Целочисленный тип
+    /// @param container Контейнер для печати
     template <class T>
     void print_ip_helper_rait(T&& container) {
         std::cout << +container[0];
@@ -18,6 +22,10 @@ namespace print {
         });
     }
 
+    /// @brief Вывод в стандартный поток элементов контейнера, итератор которого 
+    /// удовлетворяет LegacyBidirectionalIterator
+    /// @tparam T Целочисленный тип
+    /// @param container Контейнер для печати
     template <class T>
     void print_ip_helper_biit(T&& container) {
         std::cout << container.front();
@@ -34,6 +42,8 @@ namespace print {
     template <>
     struct is_string_helper<std::string> : public std::true_type {};
 
+    /// @brief  Проверяет, является ли T std::string
+    /// @tparam T проверяемый тип
     template <class T>
     struct is_string : public is_string_helper<std::remove_cv_t<T>> {};
 
@@ -46,6 +56,8 @@ namespace print {
     template <class... Args>
     struct is_vector_helper<std::vector<Args...>> : public std::true_type {};
 
+    /// @brief  Проверяет, является ли T std::vector
+    /// @tparam T проверяемый тип
     template <class T>
     struct is_vector : public is_vector_helper<std::remove_cv_t<T>> {};
     
@@ -58,6 +70,8 @@ namespace print {
     template <class... Args>
     struct is_list_helper<std::list<Args...>> : public std::true_type {};
 
+    /// @brief  Проверяет, является ли T std::list
+    /// @tparam T проверяемый тип
     template <class T>
     struct is_list : public is_list_helper<std::remove_cv_t<T>> {};
     

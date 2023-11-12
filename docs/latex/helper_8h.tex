@@ -1,0 +1,68 @@
+\hypertarget{helper_8h}{}\doxysection{Файл libs/\+Print\+IP/include/helper.h}
+\label{helper_8h}\index{libs/PrintIP/include/helper.h@{libs/PrintIP/include/helper.h}}
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+Граф включаемых заголовочных файлов для helper.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{helper_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{helper_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structprint_1_1is__string__helper}{print\+::is\+\_\+string\+\_\+helper$<$ class $>$}}
+\item 
+struct \mbox{\hyperlink{structprint_1_1is__string__helper_3_01std_1_1string_01_4}{print\+::is\+\_\+string\+\_\+helper$<$ std\+::string $>$}}
+\item 
+struct \mbox{\hyperlink{structprint_1_1is__string}{print\+::is\+\_\+string$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли T std\+::string. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structprint_1_1is__vector__helper}{print\+::is\+\_\+vector\+\_\+helper$<$ class $>$}}
+\item 
+struct \mbox{\hyperlink{structprint_1_1is__vector__helper_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4}{print\+::is\+\_\+vector\+\_\+helper$<$ std\+::vector$<$ Args... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structprint_1_1is__vector}{print\+::is\+\_\+vector$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли T std\+::vector. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structprint_1_1is__list__helper}{print\+::is\+\_\+list\+\_\+helper$<$ class $>$}}
+\item 
+struct \mbox{\hyperlink{structprint_1_1is__list__helper_3_01std_1_1list_3_01Args_8_8_8_01_4_01_4}{print\+::is\+\_\+list\+\_\+helper$<$ std\+::list$<$ Args... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structprint_1_1is__list}{print\+::is\+\_\+list$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли T std\+::list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Пространства имен}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceprint}{print}}
+\begin{DoxyCompactList}\small\item\em Основной namespace для Print\+IP ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{namespaceprint_a0447f1893d4ba0f617d16c754e7c1a63}{print\+::print\+\_\+ip\+\_\+helper\+\_\+rait}} (T \&\&container)
+\begin{DoxyCompactList}\small\item\em Вывод в стандартный поток элементов контейнера, итератор которого удовлетворяет Legacy\+Random\+Access\+Iterator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{namespaceprint_aaad120db905796d441e59d8af9bd253b}{print\+::print\+\_\+ip\+\_\+helper\+\_\+biit}} (T \&\&container)
+\begin{DoxyCompactList}\small\item\em Вывод в стандартный поток элементов контейнера, итератор которого удовлетворяет Legacy\+Bidirectional\+Iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\constexpr bool \mbox{\hyperlink{namespaceprint_ac72c5f5ca30cb0c3587ac713bff157f2}{print\+::is\+\_\+string\+\_\+v}} = is\+\_\+string$<$T$>$\+::value
+\item 
+{\footnotesize template$<$class T $>$ }\\constexpr bool \mbox{\hyperlink{namespaceprint_a4d7bdbef0f602eaff8f221ae10656258}{print\+::is\+\_\+vector\+\_\+v}} = is\+\_\+vector$<$T$>$\+::value
+\item 
+{\footnotesize template$<$class T $>$ }\\constexpr bool \mbox{\hyperlink{namespaceprint_aef19ab1159991b972e62afe5d51876ad}{print\+::is\+\_\+list\+\_\+v}} = is\+\_\+list$<$T$>$\+::value
+\end{DoxyCompactItemize}

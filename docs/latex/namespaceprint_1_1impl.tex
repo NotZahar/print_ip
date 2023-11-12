@@ -1,0 +1,83 @@
+\hypertarget{namespaceprint_1_1impl}{}\doxysection{Пространство имен print\+::impl}
+\label{namespaceprint_1_1impl}\index{print::impl@{print::impl}}
+
+
+Реализация функции печати для разных типов  
+
+
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T , std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ T $>$, bool $>$  = true$>$ }\\void \mbox{\hyperlink{namespaceprint_1_1impl_a6b010a9bf1eecb3f79899626a5201da5}{print\+\_\+ip}} (T \&\&ip)
+\begin{DoxyCompactList}\small\item\em Функция печати для целочисленных типов, число печатается по байтно \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализация функции печати для разных типов 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{namespaceprint_1_1impl_a6b010a9bf1eecb3f79899626a5201da5}\label{namespaceprint_1_1impl_a6b010a9bf1eecb3f79899626a5201da5}} 
+\index{print::impl@{print::impl}!print\_ip@{print\_ip}}
+\index{print\_ip@{print\_ip}!print::impl@{print::impl}}
+\doxysubsubsection{\texorpdfstring{print\_ip()}{print\_ip()}}
+{\footnotesize\ttfamily template$<$class T , std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ T $>$, bool $>$  = true$>$ \\
+void print\+::impl\+::print\+\_\+ip (\begin{DoxyParamCaption}\item[{T \&\&}]{ip }\end{DoxyParamCaption})}
+
+
+
+Функция печати для целочисленных типов, число печатается по байтно 
+
+Функция печати для std\+::list, печатается по элементно
+
+Функция печати для std\+::vector, печатается по элементно
+
+Функция печати для std\+::string, печатается \char`\"{}как есть\char`\"{}.
+
+
+\begin{DoxyTemplParams}{Параметры шаблона}
+{\em T} & Целочисленный тип \\
+\hline
+{\em enable\+\_\+if...} & Параметр для SFINAE \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Аргументы}
+{\em ip} & IP в виде числа\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Параметры шаблона}
+{\em T} & std\+::string \\
+\hline
+{\em enable\+\_\+if...} & Параметр для SFINAE \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Аргументы}
+{\em ip} & IP в виде std\+::string\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Параметры шаблона}
+{\em T} & std\+::vector \\
+\hline
+{\em enable\+\_\+if...} & Параметр для SFINAE \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Аргументы}
+{\em ip} & IP в виде std\+::vector\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Параметры шаблона}
+{\em T} & std\+::list \\
+\hline
+{\em enable\+\_\+if...} & Параметр для SFINAE \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Аргументы}
+{\em ip} & IP в виде std\+::list \\
+\hline
+\end{DoxyParams}
