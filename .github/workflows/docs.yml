@@ -1,4 +1,4 @@
-name: 'PrintIP Documentation'
+name: 'PrintIP documentation'
 
 on:
   push:
